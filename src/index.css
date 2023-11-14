@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+nav {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+nav img {
+  width: 100px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+ul a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+}
+.home-container {
+  background-image: url(https://images.pexels.com/photos/2649403/pexels-photo-2649403.jpeg?);
+  width: 100%;
+  height: 70vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  justify-content: center;
+}
+.heading h1 {
+  color: white;
+  font-size: 48px;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 3px 3px grey;
+}
+.card {
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 0;
+  justify-content: center;
+}
+.card-container {
+  background: #ffffff;
+  box-shadow: 3px 3px 3px grey;
+  width: 400px;
+}
+.card-container img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.card-container h3 {
+  font-size: 24px;
+  text-align: center;
+}
+.card-container .desc {
+  font-size: 22px;
+  text-align: center;
+}
+
+.card-container .price {
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.card-container .price span {
+  font-weight: 700;
 }
